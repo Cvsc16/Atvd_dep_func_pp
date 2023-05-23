@@ -11,6 +11,7 @@ public abstract class DAOFactory {
                 return new MySQLDAOFactory();
             case SQLITE:
                 return new SQLiteDAOFactory();
+
             default:
                 return null;
         }
