@@ -8,7 +8,7 @@ public abstract class DAOFactory {
     public static DAOFactory getDAOFactory(int whichFactory) {
         switch (whichFactory) {
             case MYSQL:
-                return new MySQLDAOFactory();
+                return new MysqlDAOFactory();
             case SQLITE:
                 return new SQLiteDAOFactory();
 
@@ -16,4 +16,6 @@ public abstract class DAOFactory {
                 return null;
         }
     }
+
+    public abstract DepartmentDAO getDepartmentDAO();
 }
