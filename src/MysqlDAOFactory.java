@@ -17,13 +17,20 @@ public class MysqlDAOFactory extends DAOFactory {
         return null;
     }
 
+
     @Override
-    public DepartmentDAO getDepartmentDAO() {
-        return new MysqlDerpatamentDAO();
+    public DepartmentDAO getDepartmentDao() {
+        return null;
     }
 
-    //public EmployeeDAO getEmployeeDAO() {
-    //  return new MysqlEmployeeDAO();
-    //}
+    @Override
+    public EmployeeDAO getEmployeeDao() {
+        return null;
+    }
+
+    @Override
+    public DepartmentDAO getDepartmentDAO() {
+        return null;
+    }
 }
 
